@@ -1,5 +1,8 @@
 # graalvm-alpine
 
+[![Docker Automated build](https://img.shields.io/docker/automated/renanpalmeira/graalvm-alpine.svg)](https://hub.docker.com/r/renanpalmeira/graalvm-alpine/)
+
+
 GraalVM in a alpine container.
 
 ## Usage
