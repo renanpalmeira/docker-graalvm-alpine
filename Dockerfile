@@ -2,8 +2,8 @@ FROM alpine:3.7
 
 ENV GLIBC_VERSION=2.27-r0 \
     GRAALVM_VERSION=1.0.0-rc2 \
-    JAVA_HOME=/usr/lib/jvm/graalvm-ce-1.0.0-rc2 \
-    PATH=/usr/lib/jvm/graalvm-ce-1.0.0-rc2/bin:$PATH
+    JAVA_HOME=/usr/lib/jvm/graalvm-ce-1.0.5-rc2 \
+    PATH=/usr/lib/jvm/graalvm-ce-1.0.5-rc2/bin:$PATH
 
 RUN apk --no-cache add ca-certificates wget gcc zlib zlib-dev libc-dev
 
