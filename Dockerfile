@@ -12,7 +12,7 @@ RUN mkdir /usr/lib/jvm; \
     tar -zxC /usr/lib/jvm -f graalvm-ce-${GRAALVM_VERSION}-linux-amd64.tar.gz; \
     rm -f graalvm-ce-${GRAALVM_VERSION}-linux-amd64.tar.gz
 
-RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub \
+RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \
     &&  wget "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC_VERSION/glibc-$GLIBC_VERSION.apk" \
     &&  apk --no-cache add "glibc-$GLIBC_VERSION.apk" \
     &&  rm "glibc-$GLIBC_VERSION.apk" \
